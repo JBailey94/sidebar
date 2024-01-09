@@ -35,49 +35,51 @@ body {
   display: flex;
 }
 
-.page-content{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
+.page-content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 80px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 
 /*=======Title=======*/
 .title {
-    display: flex;
-    flex-direction: column;
-    padding-top: 15px;
-    height: 60px;
-    width: 100%;
-    margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  height: 60px;
+  width: 100%;
+  margin-left: 40px;
 }
 
-.title-text{
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    height: fit-content;
-    font-weight: bold;
-    font-size: 2.4rem;
-    color: var(--colorP2);
+.title-text {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: var(--colorP2);
 }
 
-.underline{
-    background-color: var(--colorA2);
-    height: 1px;
-    width: 120%;
+.underline {
+  background-color: var(--colorA2);
+  height: 1px;
+  width: 120%;
 }
 
 /*=======Command Row=======*/
-.cmd-row{
+.cmd-row {
   display: flex;
   width: 100%;
   height: 40px;
-  margin-top:30px;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 
-.cmd-button{
+.cmd-button {
   display: flex;
   background-color: var(--colorP9);
   height: 40px;
@@ -87,31 +89,31 @@ body {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
-.cmd-button:hover{
+.cmd-button:hover {
   padding: 13px;
   transition: padding 50ms var(--animation-timing-curve);
   box-shadow: 3px 3px 5px rgba(235, 125, 50, 0.3);
 }
 
-.cmd-button-text{
+.cmd-button-text {
   text-align: center;
   vertical-align: middle;
   margin: auto;
   padding-left: 10px;
-  padding-right: 10px
+  padding-right: 10px;
 }
 
 /*=======Search Bar=======*/
-.search-container{
+.search-container {
   display: flex;
   flex-direction: row-reverse;
   height: 40px;
   width: 100%;
 }
 
-.search-subcontainer{
-  display:flex;
-  max-width:250px;
+.search-subcontainer {
+  display: flex;
+  max-width: 250px;
   background-color: var(--colorP9);
   border-radius: 15px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
@@ -132,7 +134,7 @@ body {
   background: var(--colorA2);
 }
 
-.search-container input[type=text] {
+.search-container input[type="text"] {
   float: right;
   height: 100%;
   width: 100%;
@@ -142,28 +144,31 @@ body {
   border-radius: 15px;
   border: none;
   background-color: transparent;
-  color:var(--colorP3);
+  color: var(--colorP3);
 }
 
-.search-icon{
-  height:25px;
+.search-icon {
+  height: 25px;
   width: 25px;
 }
 
 /*=======Main Table=======*/
-.main-table-container{
+.main-table-container {
   display: flex;
   margin: auto;
+  min-width: 750px;
   max-width: 1500px;
   padding-left: 50px;
   padding-right: 50px;
   flex-direction: column;
   width: 100%;
   height: 100%px;
-  margin-top:30px;
+  margin-top: 30px;
 }
 
-.table, th, td {
+.table,
+th,
+td {
   border-radius: 5px;
   padding-left: 10px;
   padding-right: 10px;
@@ -172,7 +177,8 @@ body {
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
-.headings, .policy {
+.headings,
+.policy {
   display: flex;
   margin-bottom: 5px;
   padding: 10px;
@@ -181,7 +187,7 @@ body {
 .heading {
   flex-basis: 33.333%;
   font-weight: bold;
-  color:var(--colorP3);
+  color: var(--colorP3);
 }
 
 .policy {
@@ -189,11 +195,11 @@ body {
   background-color: var(--colorP9);
   margin-bottom: 5px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-  color:var(--colorP3);
+  color: var(--colorP3);
   transition: padding 75ms var(--animation-timing-curve);
 }
 
-.policy:hover{
+.policy:hover {
   padding: 20px;
   font-weight: bold;
   transition: padding 75ms var(--animation-timing-curve);
@@ -354,8 +360,8 @@ span {
 }
 
 .middle-sidebar .sidebar-link:hover {
-    font-weight: bold;
-  }
+  font-weight: bold;
+}
 
 .sidebar .middle-sidebar .sidebar-category {
   display: none;
@@ -400,8 +406,8 @@ p {
 details:hover,
 summary:hover,
 p:hover {
-    background-color: var(--colorP4);
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  background-color: var(--colorP4);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 summary {
