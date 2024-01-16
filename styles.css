@@ -40,19 +40,8 @@ body {
   flex-direction: column;
   padding-left: 80px;
   position: absolute;
-  height: 100%;
   width: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-.page-content::-webkit-scrollbar {
-  width: 11px;
-}
-
-.page-content::-webkit-scrollbar-thumb {
-  background-color: var(--colorP6);
-  border-radius: 5px;
+  height: 100%;
 }
 
 /*=======Title=======*/
@@ -167,20 +156,40 @@ body {
 .main-table-container {
   display: flex;
   margin: auto;
+  height: 100%;
   min-width: 750px;
   max-width: 1500px;
   padding-left: 50px;
   padding-right: 50px;
   flex-direction: column;
   width: 100%;
-  height: 100%px;
   margin-top: 15px;
 }
 
 .table-background{
+  max-height: 85vh;
   padding: 20px;
+  padding-right: 0px;
+  padding-bottom: 60px;
   background-color: var(--colorP7);
   border-radius: 20px;
+}
+
+.table-content{
+  padding-right: 20px;
+  margin-bottom: 0px;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.table-content::-webkit-scrollbar {
+  width: 11px;
+}
+
+.table-content::-webkit-scrollbar-thumb {
+  background-color: var(--colorP6);
+  border-radius: 5px;
 }
 
 .table,
