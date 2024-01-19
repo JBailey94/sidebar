@@ -273,7 +273,7 @@ span {
   height: 100vh;
   width: auto;
   background-color: var(--colorP3);
-  box-shadow: 3px 0 3px var(--shadowA1);
+  box-shadow: 3px 0 3px var(--shadowP1);
   transition: width var(--animation-duration) var(--animation-timing-curve);
 }
 
