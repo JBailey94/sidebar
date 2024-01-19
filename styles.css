@@ -254,6 +254,7 @@ span {
 }
 
 .legend-button:hover{
+  padding-top: 12px;
   background-color: var(--colorA2);
 }
 
@@ -473,12 +474,4 @@ details[open] summary::before {
   display: inline-block;
   margin-right: 5px;
   content: "⮟";
-}
-
-/*==============Sidebar==============*/
-.load-icon{
-  height: 200px;
-  width: 200px;
-  margin: 50%;
-  margin-top: 25%;
 }
