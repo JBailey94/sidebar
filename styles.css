@@ -133,7 +133,8 @@ body {
 }
 
 .search-container button:hover {
-  background: var(--colorA2);
+  padding-top: 2px;
+  background-color: var(--colorA2);
 }
 
 .search-container input[type="text"] {
@@ -215,6 +216,10 @@ td {
   margin-bottom: 10px;
   font-weight: bold;
   color: var(--colorP2);
+}
+
+.heading:hover{
+  color: var(--colorA1);
 }
 
 .policy {
@@ -474,4 +479,12 @@ details[open] summary::before {
   display: inline-block;
   margin-right: 5px;
   content: "⮟";
+}
+
+/*==============Sidebar==============*/
+.load-icon{
+  height: 200px;
+  width: 200px;
+  margin: 50%;
+  margin-top: 25%;
 }
