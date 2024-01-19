@@ -11,16 +11,18 @@
   --colorA1: #eb7d32;
   --colorA2: #f3af81;
   --colorA3: #fce0cc;
+  --shadowP1: rgba(0, 0, 0, 0.2);
+  --shadowA1: rgba(235, 125, 50, 0.3);
   --animation-duration: 150ms;
   --animation-timing-curve: ease-in-out;
 }
 
 body {
+  min-height: 100px;
   margin: 0;
   padding: 0;
-  min-height: 100px;
-  font-family: Arial, sans-serif;
   overflow: hidden;
+  font-family: Arial, sans-serif;
   color: var(--colorP2);
   background-color: var(--colorP8);
 }
@@ -38,20 +40,20 @@ body {
 .page-content {
   display: flex;
   flex-direction: column;
-  padding-left: 80px;
   position: absolute;
   width: 100%;
   height: 100%;
+  padding-left: 80px;
 }
 
-/*=======Title=======*/
+/*==============Title==============*/
 .title {
   display: flex;
   flex-direction: column;
-  padding-top: 15px;
   height: 60px;
   width: 100%;
   margin-left: 40px;
+  padding-top: 15px;
 }
 
 .title-text {
@@ -70,7 +72,7 @@ body {
   width: 110%;
 }
 
-/*=======Command Row=======*/
+/*==============Command Row==============*/
 .cmd-row {
   display: flex;
   width: 100%;
@@ -81,18 +83,18 @@ body {
 
 .cmd-button {
   display: flex;
-  background-color: var(--colorP9);
   height: 40px;
   min-width: 125px;
   margin-right: 20px;
   border-radius: 10px;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  background-color: var(--colorP9);
+  box-shadow: 3px 3px 5px var(--shadowP1);
 }
 
 .cmd-button:hover {
   padding: 13px;
   transition: padding 50ms var(--animation-timing-curve);
-  box-shadow: 3px 3px 5px rgba(235, 125, 50, 0.3);
+  box-shadow: 3px 3px 5px var(--shadowA1);
 }
 
 .cmd-button-text {
@@ -103,7 +105,7 @@ body {
   padding-right: 10px;
 }
 
-/*=======Search Bar=======*/
+/*┅┅┅┅┅┅┅Search Bar┅┅┅┅┅┅┅*/
 .search-container {
   display: flex;
   flex-direction: row-reverse;
@@ -114,9 +116,9 @@ body {
 .search-subcontainer {
   display: flex;
   max-width: 250px;
-  background-color: var(--colorP9);
   border-radius: 15px;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  background-color: var(--colorP9);
+  box-shadow: 3px 3px 3px var(--shadowP1);
 }
 
 .search-container button {
@@ -124,10 +126,10 @@ body {
   height: 100%;
   width: 40px;
   border-radius: 10px;
-  background: var(--colorP6);
   font-size: 17px;
   border: none;
   cursor: pointer;
+  background: var(--colorP6);
 }
 
 .search-container button:hover {
@@ -140,8 +142,8 @@ body {
   width: 100%;
   padding: 6px;
   padding-left: 10px;
-  font-size: 17px;
   border-radius: 15px;
+  font-size: 17px;
   border: none;
   background-color: transparent;
   color: var(--colorP3);
@@ -152,108 +154,110 @@ body {
   width: 25px;
 }
 
-/*=======Main Table=======*/
+/*==============Main Table==============*/
 .main-table-container {
   display: flex;
-  margin: auto;
   height: 100%;
+  width: 100%;
   min-width: 750px;
   max-width: 1500px;
+  margin: auto;
+  margin-top: 15px;
   padding-left: 50px;
   padding-right: 50px;
   flex-direction: column;
-  width: 100%;
-  margin-top: 15px;
 }
 
 .table-background{
   max-height: 85vh;
   padding: 20px;
   padding-right: 0px;
-  padding-bottom: 60px;
-  background-color: var(--colorP7);
+  padding-bottom: 40px;
   border-radius: 20px;
+  background-color: var(--colorP7);
 }
 
 .table-content{
-  padding-right: 20px;
-  margin-bottom: 0px;
   height: 100%;
+  padding-right: 20px;
   overflow-y: auto;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 
+/*┅┅┅┅┅┅┅Table Scroll┅┅┅┅┅┅┅*/
 .table-content::-webkit-scrollbar {
   width: 11px;
 }
 
 .table-content::-webkit-scrollbar-thumb {
-  background-color: var(--colorP6);
   border-radius: 5px;
+  background-color: var(--colorP6);
 }
 
-.table,
+/*.table,
 th,
 td {
-  border-radius: 5px;
+  margin-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
+  border-radius: 5px;
   background-color: var(--colorP9);
-  margin-bottom: 20px;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-}
+  box-shadow: 3px 3px 3px var(--shadowP1);
+}*/
 
 .headings,
 .policy {
   display: flex;
-  margin-bottom: 5px;
-  padding: 10px;
 }
 
 .heading {
   flex-basis: 33.333%;
+  margin-bottom: 10px;
   font-weight: bold;
   color: var(--colorP2);
 }
 
 .policy {
+  margin-bottom: 3px;
+  padding: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   border-radius: 10px;
-  background-color: var(--colorP9);
-  margin-bottom: 4px;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
   color: var(--colorP3);
+  background-color: var(--colorP9);
+  box-shadow: 3px 3px 3px var(--shadowP1);
   transition: padding 100ms var(--animation-timing-curve);
 }
 
 .policy:hover {
   padding: 20px;
   font-weight: bold;
+  box-shadow: 3px 3px 5px var(--shadowA1);
   transition: padding 100ms var(--animation-timing-curve);
-  box-shadow: 3px 3px 5px rgba(235, 125, 50, 0.3);
 }
 
 span {
   flex-basis: 33.333%;
 }
 
-/*=======Legend=======*/
+/*==============Legend==============*/
 .legend-button{ 
   position: absolute;
   bottom: 50px;
   right: 50px;
   height: 65px;
   width: 65px;
-  border-radius: 20px;
   padding: 10px;
+  border-radius: 20px;
   background-color: var(--colorP6);
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 3px var(--shadowP1);
 }
 
 .legend-button:hover{
   background-color: var(--colorA2);
 }
 
-/*=======Sidebar=======*/
+/*==============Sidebar==============*/
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -261,57 +265,53 @@ span {
   flex-shrink: 0;
   flex-grow: 0;
   height: 100vh;
-  width: 80px;
-  transition: width var(--animation-duration) var(--animation-timing-curve);
+  width: auto;
   background-color: var(--colorP3);
-  box-shadow: 3px 0 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 0 3px var(--shadowA1);
+  transition: width var(--animation-duration) var(--animation-timing-curve);
 }
 
 .sidebar.open {
-  width: 300px;
+  width: auto;
 }
 
-/*=======Sidebar Scroll=======*/
+/*┅┅┅┅┅┅┅Sidebar Scroll┅┅┅┅┅┅┅*/
 .middle-sidebar::-webkit-scrollbar {
   width: 7px;
 }
 
 .middle-sidebar::-webkit-scrollbar-thumb {
-  background-color: var(--colorA1);
   border-radius: 3px;
+  background-color: var(--colorA1);
 }
 
-/*=======Sidebar Header=======*/
+/*┅┅┅┅┅┅┅Sidebar Header┅┅┅┅┅┅┅*/
 .top-sidebar {
   display: flex;
-  background-color: var(--colorP1);
   width: 100%;
   margin-bottom: 5px;
-  position: relative;
+  background-color: var(--colorP1);
 }
 
 .top-sidebar .logo-text {
   display: flex;
-  position: relative;
   flex-direction: column;
   justify-content: center;
-  margin: 0;
   margin-top: 10px;
   margin-left: 15px;
   margin-right: 15px;
   font-size: 2rem;
   color: var(--colorP9);
-  background-color: transparent;
 }
 
 .top-sidebar span {
-  color: var(--colorA1);
   display: flex;
   position: relative;
-  font-size: 1.4rem;
-  width: fit-content;
+  width: 100%;
   left: 90px;
   top: -8px;
+  font-size: 1.4rem;
+  color: var(--colorA1);
 }
 
 .top-sidebar .sidebar-icon {
@@ -319,14 +319,14 @@ span {
   max-height: 80px;
 }
 
-/*=======Sidebar Rows=======*/
+/*┅┅┅┅┅┅┅Sidebar Rows┅┅┅┅┅┅┅*/
 .middle-sidebar {
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
-  overflow-x: hidden;
   padding: 5px;
   border-radius: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
   text-decoration: none !important;
 }
 
@@ -339,13 +339,13 @@ span {
 }
 
 .middle-sidebar .sidebar-list {
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  list-style: none;
   position: relative;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .middle-sidebar .sidebar-list-item {
@@ -358,20 +358,20 @@ span {
 
 .middle-sidebar .sidebar-list-item .category-text {
   white-space: nowrap;
-  color: var(--colorP9);
   position: relative;
   left: 10px;
+  color: var(--colorP9);
 }
 
 .middle-sidebar .sidebar-list-item:hover {
   background-color: var(--colorP4);
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 3px 5px var(--shadowP1);
 }
 
 .middle-sidebar .sidebar-list-item.selected {
   border-radius: 20px;
   background-color: var(--colorP6);
-  box-shadow: 0px 0 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0 3px var(--shadowP1);
 }
 
 /*.middle-sidebar
@@ -382,23 +382,22 @@ span {
     left: 0;
     width: 3px;
     position: absolute;
-}*/
+}
 
 .middle-sidebar .sidebar-list-item .sidebar-helper {
-  max-height: 20px;
-  max-width: 20px;
   display: inline-block;
   position: absolute;
+  max-height: 20px;
+  max-width: 20px;
   right: 0.6rem;
-  filter: invert(100%);
   background-color: var(--colorA1);
-}
+}*/
 
 .middle-sidebar .sidebar-link {
   display: flex;
+  align-items: center;
   width: 100%;
   text-decoration: none;
-  align-items: center;
   color: var(--colorP9);
 }
 
@@ -412,12 +411,11 @@ span {
 
 .sidebar.open .middle-sidebar .sidebar-list-item.selected + .sidebar-category {
   display: flex;
-  cursor: pointer;
-  height: auto;
-  width: 100%;
-  display: flex;
   flex-direction: column;
   flex-shrink: 1;
+  height: auto;
+  width: 100%;
+  cursor: pointer;
   background-color: transparent;
 }
 
@@ -428,36 +426,35 @@ span {
 }
 
 .sidebar.open .hidden-sidebar {
-  opacity: 1;
   height: auto;
   width: max-content;
+  padding-right: 50px;
+  opacity: 1;
 }
 
-/*=======Sidebar List=======*/
+/*┅┅┅┅┅┅┅Sidebar List┅┅┅┅┅┅┅*/
 details,
 summary,
 p {
   display: block;
-  white-space: nowrap;
   border-radius: 20px;
-  /*padding-top: 50px;
-    margin-top: -30px;*/
-  background-color: transparent;
+  white-space: nowrap;
   color: var(--colorP9);
+  background-color: transparent;
 }
 
 details:hover,
 summary:hover,
 p:hover {
   background-color: var(--colorP4);
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 3px 5px var(--shadowP1);
 }
 
 summary {
-  font-weight: bold;
-  cursor: pointer;
   padding: 5px;
   border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
   background-color: transparent;
 }
 
@@ -466,14 +463,22 @@ li {
 }
 
 summary::before {
-  content: "⮞";
-  margin-right: 5px;
   display: inline-block;
+  margin-right: 5px;
+  content: "⮞";
 }
 
 /* Rotate the icon for the open state */
 details[open] summary::before {
-  content: "⮟";
-  margin-right: 5px;
   display: inline-block;
+  margin-right: 5px;
+  content: "⮟";
+}
+
+/*==============Sidebar==============*/
+.load-icon{
+  height: 200px;
+  width: 200px;
+  margin: 50%;
+  margin-top: 25%;
 }
