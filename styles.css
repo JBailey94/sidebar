@@ -46,6 +46,30 @@ body {
   padding-left: 80px;
 }
 
+/*FOR DEMO ONLY*/
+.ss-page-content {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-left: 80px;
+}
+
+.tb-split-content{
+  display:flex;
+  flex-direction: column;
+  width: 48%;
+  height: 100%;
+}
+
+.split-bar{
+  height:100%;
+  width: 10px;
+  background-color: var(--colorP7);
+}
+/*FOR DEMO ONLY*/
+
 /*==============Title==============*/
 .title {
   display: flex;
@@ -163,6 +187,20 @@ body {
   width: 100%;
   min-width: 750px;
   max-width: 1500px;
+  margin: auto;
+  margin-top: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 180px;
+  flex-direction: column;
+}
+
+.main-table-container-full {
+  display: flex;
+  max-height: 100%;
+  width: 100%;
+  min-width: 750px;
+  max-width: 100%;
   margin: auto;
   margin-top: 5px;
   padding-left: 50px;
