@@ -68,6 +68,11 @@ body {
   width: 10px;
   background-color: var(--colorP7);
 }
+
+.split-bar:hover{
+  cursor: e-resize;
+  box-shadow: 0px 0px 2px var(--shadowA1);
+}
 /*FOR DEMO ONLY*/
 
 /*==============Title==============*/
@@ -117,6 +122,7 @@ body {
 
 .cmd-button:hover {
   padding: 13px;
+  cursor: pointer;
   transition: padding 50ms var(--animation-timing-curve);
   box-shadow: 3px 3px 5px var(--shadowA1);
 }
@@ -158,6 +164,7 @@ body {
 
 .search-container button:hover {
   padding-top: 2px;
+  cursor: pointer;
   background-color: var(--colorA2);
 }
 
@@ -224,6 +231,10 @@ body {
   overflow-x: auto;
 }
 
+.table-content:hover{
+  cursor: pointer;
+}
+
 /*┅┅┅┅┅┅┅Table Scroll┅┅┅┅┅┅┅*/
 .table-content::-webkit-scrollbar {
   width: 11px;
@@ -232,6 +243,10 @@ body {
 .table-content::-webkit-scrollbar-thumb {
   border-radius: 5px;
   background-color: var(--colorP6);
+}
+
+.table-content::-webkit-scrollbar-thumb:hover {
+  background-color: var(--colorP5);
 }
 
 /*.table,
@@ -259,6 +274,7 @@ td {
 
 .heading:hover{
   color: var(--colorA1);
+  cursor: pointer;
 }
 
 .policy {
@@ -299,6 +315,7 @@ span {
 
 .legend-button:hover{
   padding-top: 12px;
+  cursor: pointer;
   background-color: var(--colorA2);
 }
 
@@ -410,6 +427,7 @@ span {
 
 .middle-sidebar .sidebar-list-item:hover {
   background-color: var(--colorP4);
+  cursor: pointer;
   box-shadow: 0px 3px 5px var(--shadowP1);
 }
 
